@@ -1,7 +1,7 @@
-import React from "react";
-const ToggleBtn = ({ toggle, setToggle }) => {
+import React, { use } from "react";
+const ToggleBtn = ({ toggle, setToggle, fetchPromise }) => {
   const btns = ["All", "Pending", "Submitted", "Reviewed"];
-
+  const usePromise = use(fetchPromise);
   return (
     <div className="text-right m-5 space-x-5">
       {btns.map((btn, ind) => {

@@ -8,7 +8,7 @@ const Navbar = () => {
           <h1 className="text-2xl font-bold">FAM University</h1>
         </div>
         <div>
-          <ul className="flex flex-col md:justify-center md:items-center gap-5">
+          <ul className="flex flex-col md:flex-row md:justify-center md:items-center gap-5">
             <li>Home</li>
             <li>Faculty</li>
             <li>Students</li>
