@@ -17,14 +17,18 @@ function App() {
   return (
     <div className="">
       <Navbar></Navbar>
-      <Hero></Hero>
+
       <ToggleBtn
         fetchPromise={fetchPromise}
         toggle={toggle}
         setToggle={setToggle}
       ></ToggleBtn>
       <Suspense fallback={<p className="text-center p-5">loading...</p>}>
-        <FetchData fetchPromise={fetchPromise}></FetchData>
+        <FetchData
+          fetchPromise={fetchPromise}
+          toggle={toggle}
+          setToggle={setToggle}
+        ></FetchData>
       </Suspense>
       <Footer></Footer>
     </div>
